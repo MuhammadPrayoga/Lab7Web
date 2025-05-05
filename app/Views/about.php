@@ -10,7 +10,6 @@
     <?= $this->include('template/header'); ?>
     <section id="about">
         <div class="row">
-            <img src="fa.jpg" title="Muhmmad Prayoga" width="200" style="float: left; border: 1px solid black;">
             <h1>Hey !</h1>
             <p>SI'm Yoga, I am a Student at Pelita Bangsa University <br> I’m currently learning <b>Cybersecurity and Data Science.</b></p>
         </div>

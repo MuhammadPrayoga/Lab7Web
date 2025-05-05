@@ -31,7 +31,7 @@ header h1{
 /* navigasi */
 nav{
     display: block;
-    background-color: #1f5faa;
+    background-color: #8B0000;
     position: sticky;
     top: 0;
 }
@@ -157,8 +157,12 @@ button:hover{
 /* footer */
 footer{
     clear: both;
-    background-color: #1d1d1d;
-    padding: 20px;
+    background-color: #8B0000;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
     color: #eee;
 }
 /* box */
@@ -257,7 +261,7 @@ h1{
 button[type=submit]{
     padding: 7px;
     color: white;
-    background-color: rgb(44, 118, 148);
+    background-color: #FF0000;
     box-sizing: border-box;
     font-size: 15px;
     border-radius: 4px;
