@@ -32,16 +32,16 @@ class Artikel extends BaseController
 
     public function admin_index()
     {
-	      $title = 'Daftar Artikel';
-	      $q = $this->request->getVar('q') ?? '';
-	      $model = new ArtikelModel();
-	      $data = [
-	           'title' => $title,
-	           'q' => $q,
-	           'artikel' => $model->like('judul', $q)->paginate(2), # data dibatasi 2 record per halaman
-	           'pager' => $model->pager,
-	         ];
-	      return view('artikel/admin_index', $data);
+        $title = 'Daftar Artikel';
+        $q = $this->request->getVar('q') ?? '';
+        $model = new ArtikelModel();
+        $data = [
+            'title' => $title,
+            'q' => $q,
+            'artikel' => $model->like('judul', $q)->paginate(2), # data dibatasi 2 record per halaman
+            'pager' => $model->pager,
+        ];
+        return view('artikel/admin_index', $data);
     }
     public function add()
     {
@@ -49,12 +49,11 @@ class Artikel extends BaseController
         $validation = \Config\Services::validation();
         $validation->setRules(['judul' => 'required']);
         $isDataValid = $validation->withRequest($this->request)->run();
-        
-        if ($isDataValid)
-        {
+
+        if ($isDataValid) {
             $file = $this->request->getFile('gambar');
             $file->move(ROOTPATH . 'public/gambar');
-            
+
             $artikel = new ArtikelModel();
             $artikel->insert([
                 'judul' => $this->request->getPost('judul'),

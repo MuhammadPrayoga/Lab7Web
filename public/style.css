@@ -45,7 +45,7 @@ nav a{
 }
 nav a.active,
 nav a:hover{
-    background-color: #2b83ea;
+    background-color: #FF0000;
 }
 /* Hero Panel */
 #hero{
@@ -108,7 +108,7 @@ button{
 }
 button:hover{
     opacity: 0,9;
-    background-color: #1f5faa;
+    background-color: #FF0000;
 }
 /* main content */
 #wrapper{
@@ -132,7 +132,7 @@ button:hover{
 }
 .widget-box .title{
     padding: 10px 16px;
-    background-color: #428bca;
+    background-color: #D10000;
     color: #fff;
 }
 .widget-box ul{
